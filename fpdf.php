@@ -977,6 +977,12 @@ function SetXY($x, $y)
 	$this->SetY($y,false);
 }
 
+function GetScaleFactor()
+{
+    // Get current page scale factor
+    return $this->k;
+}
+
 function Output($dest='', $name='', $isUTF8=false)
 {
 	// Output PDF to some destination
